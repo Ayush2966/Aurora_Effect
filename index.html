@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+              crossorigin="anonymous">
+		<title>Ayush Jain</title>
+		<style>
+			* {
+				user-select: none;
+			}
+
+			html,
+			body {
+				overflow: hidden;
+				background-color: black;
+			}
+
+			body {
+				margin: 0;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+			}
+
+			.dg.ac {
+				display: none;
+			}
+
+			canvas {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const h2 = document.querySelector("h2");
+
+				function toggleHoverEffect() {
+					h2.classList.toggle("open");
+				}
+
+				h2.addEventListener("click", toggleHoverEffect);
+			});
+		</script>
+	</head>
+	<body>
+		<canvas></canvas>
+		<h2>
+			Ayush Jain
+			<span>Ayush Jain</span>
+			<span>Ayush Jain</span>
+			<span>Namaste 🙏</span>
+		</h2>
+		<div class="icon-container">
+			<a href="https://github.com/Ayush2966" target="_blank"><i class="fab fa-github" id="github"></i></a>
+			<a href="https://twitter.com/AyushJaun" target="_blank"><i class="fab fa-twitter" id="twitter"></i></a>
+			<a href="https://www.linkedin.com/in/ayush-jain-315b51228/" target="_blank"><i class="fab fa-linkedin" id="linkedin"></i></a>
+			<a href="http://ayush2966.me/Error-404/" target="_blank"><i class="fas fa-globe" id="website"></i></a>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+		<script src="dat.gui.min.js"></script>
+		<script src="fluid-background.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
